@@ -30,7 +30,7 @@ monster.health = 2800
 monster.maxHealth = 2800
 monster.race = "blood"
 monster.corpse = 34737
-monster.speed = 320
+monster.speed = 160
 monster.manaCost = 0
 monster.maxSummons = 0
 
@@ -79,12 +79,12 @@ monster.voices = {
 
 monster.loot = {
 	{name = "Platinum Coin", chance = 100000, maxCount = 6},
-	{name = "Green Glass Plate", chance = 12000, maxCount = 17},
+	{name = "Green Glass Plate", chance = 12000, maxCount = 2},
 	{name = "Blue Crystal Splinter", chance = 11500},
 	{name = "Brown Crystal Splinter", chance = 11000},
 	{name = "Dark Armor", chance = 10000},
 	{name = "Guardian Shield", chance = 9000},
-	{name = "Rainbow Quartz", chance = 8500},
+	{name = "Rainbow Quartz", chance = 8500, maxCount = 2},
 	{name = "Blue Robe", chance = 8000},
 	{name = "Glacier Amulet", chance = 7500},
 	{name = "Lightning Pendant", chance = 2200},
@@ -114,10 +114,10 @@ monster.reflects = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 40},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
 	{type = COMBAT_EARTHDAMAGE, percent = 0},
-	{type = COMBAT_FIREDAMAGE, percent = 20},
+	{type = COMBAT_FIREDAMAGE, percent = -30},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},

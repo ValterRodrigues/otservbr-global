@@ -30,7 +30,7 @@ monster.health = 2600
 monster.maxHealth = 2600
 monster.race = "blood"
 monster.corpse = 34703
-monster.speed = 400
+monster.speed = 200
 monster.manaCost = 0
 monster.maxSummons = 0
 
@@ -78,7 +78,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 5},
+	{name = "platinum coin", chance = 100000, maxCount = 3},
 	{name = "Blue Glass Plate", chance = 100000, maxCount = 3},
 	{id = 2376, chance = 15000},
 	{name = "Axe", chance = 14000},
@@ -102,15 +102,15 @@ monster.attacks = {
 
 monster.defenses = {
 	defense = 20,
-	armor = 71,
+	armor = 65,
 	{name ="combat", interval = 2000, chance = 10, type = COMBAT_HEALING, minDamage = 150, maxDamage = 200, effect = CONST_ME_MAGIC_BLUE, target = false}
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 20},
 	{type = COMBAT_ENERGYDAMAGE, percent = 0},
 	{type = COMBAT_EARTHDAMAGE, percent = 0},
-	{type = COMBAT_FIREDAMAGE, percent = 20},
+	{type = COMBAT_FIREDAMAGE, percent = -40},
 	{type = COMBAT_LIFEDRAIN, percent = 0},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 0},

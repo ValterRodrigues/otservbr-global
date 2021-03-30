@@ -30,7 +30,7 @@ monster.health = 3500
 monster.maxHealth = 3500
 monster.race = "blood"
 monster.corpse = 34741
-monster.speed = 340
+monster.speed = 170
 monster.manaCost = 0
 monster.maxSummons = 0
 
@@ -78,7 +78,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 6},
+	{name = "platinum coin", chance = 100000, maxCount = 8},
 	{name = "Morning Star", chance = 100000},
 	{name = "Terra Rod", chance = 15550},
 	{name = "Small Ruby", chance = 15000},
